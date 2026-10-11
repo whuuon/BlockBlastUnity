@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c4b0c8478e997d247b494d9747b11f93, type: 3}
+  m_Name: Theme
+  m_EditorClassIdentifier: 
+  background: {fileID: 118122005513370663, guid: f11587397e4b97341a7c9f48505ab101, type: 3}
+  logo: {fileID: 21300000, guid: c7519e5d688b94f438c8c9396ccf66aa, type: 3}
+  board: {fileID: 21300000, guid: 12f0853c96380a64a97c6483eae95a47, type: 3}
+  button: {fileID: 21300000, guid: 68b28e5f36120f048a04c0f09f6222a3, type: 3}
+  emptyCell: {fileID: 4688015950388016354, guid: 32f3b40596010eb4f92499e2ace2edf7, type: 3}
+  blocks:
+  - {fileID: 21300000, guid: 729523780eaaaa2439e48f94d082ae5b, type: 3}
+  - {fileID: 21300000, guid: f718f41b3f8d83c4da9d31102f8ea6da, type: 3}
+  - {fileID: 21300000, guid: 0c49d5da631dae249b7555c380895609, type: 3}
+  font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}

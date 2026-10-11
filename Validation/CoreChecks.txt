@@ -1,0 +1,15 @@
+PASS | Empty board accepts a piece
+PASS | Negative and overflowing placement are rejected
+PASS | Occupied cells reject overlap without mutation
+PASS | Invalid multi-cell placement is atomic
+PASS | Full row clears without gravity
+PASS | Full column clears
+PASS | Crossing row and column clear simultaneously, intersection once
+PASS | Two full rows clear in one placement
+PASS | No-move detection respects remaining shape geometry
+PASS | Reset empties every cell
+PASS | Placement scores ten per cell
+PASS | Consecutive clears multiply line bonus
+PASS | Non-clear resets combo; invalid move keeps score and combo
+PASS | Malformed shapes fail early
+PASS | Deterministic 2000-turn simulation preserves board invariants

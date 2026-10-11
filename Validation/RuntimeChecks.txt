@@ -1,0 +1,22 @@
+PASS | Scene loads into menu
+PASS | Menu Play button starts a valid game
+PASS | Piece hit area receives pointer events
+PASS | Begin-drag creates an active drag
+PASS | Dropping through pointer events places and scores the shape
+PASS | Used tray slot is consumed exactly once
+PASS | Pause blocks placements
+PASS | Resume restores input
+PASS | Sound toggle persists and restores setting
+PASS | Restart resets score and board
+PASS | Tray piece 0 can be placed
+PASS | Tray piece 1 can be placed
+PASS | Tray piece 2 can be placed
+PASS | Using three pieces refills the tray
+PASS | Clear-triggering placement succeeds
+PASS | Input is locked during clear animation
+PASS | Clear animation resolves to empty row with correct score
+PASS | Final legal move succeeds
+PASS | Game over detects no remaining legal shape
+PASS | Game over retry starts a clean game
+PASS | Home returns to menu
+PASS | Help opens from menu
