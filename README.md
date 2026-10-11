@@ -1,6 +1,6 @@
 # Block Blast 2D — Unity project
 
-Game xếp khối đơn giản, hoàn chỉnh cho bài tập Unity. Giao diện tiếng Việt, dùng ảnh gốc xuất từ file Figma được cung cấp. Unity **2022.3.62f2 LTS**.
+Game xếp khối đơn giản.
 
 ## Mở và chạy
 
@@ -8,8 +8,6 @@ Game xếp khối đơn giản, hoàn chỉnh cho bài tập Unity. Giao diện 
 2. Trong Unity Hub, chọn **Add → Add project from disk**, trỏ tới thư mục có `Assets`, `Packages`, `ProjectSettings`.
 3. Mở bằng Unity 2022.3.62f2, chờ Unity nhập tài nguyên.
 4. Mở `Assets/BlockBlast/Scenes/Main.unity`, bấm **Play**, chọn **CHƠI NGAY**.
-
-Bản Windows đi kèm chạy bằng `BlockBlast.exe`. Giữ nguyên các thư mục và DLL bên cạnh file EXE. Không cần cài Unity để chạy bản này.
 
 ## Cách chơi
 
@@ -24,8 +22,6 @@ Bản Windows đi kèm chạy bằng `BlockBlast.exe`. Giữ nguyên các thư m
 
 ## Cấu trúc script
 
-Mỗi lớp có file riêng; không có chú thích thừa trong mã nguồn.
-
 | Thư mục | Trách nhiệm |
 |---|---|
 | `Scripts/Core` | Tọa độ, hình khối, bàn chơi, kết quả đặt, điểm và trạng thái. Không phụ thuộc giao diện. |
@@ -39,19 +35,3 @@ Mỗi lớp có file riêng; không có chú thích thừa trong mã nguồn.
 
 `GameController` nhận yêu cầu từ giao diện → kiểm tra bằng `BoardModel` → cập nhật `ScoreModel` → hiển thị và phát âm thanh. UI không tự sửa luật chơi.
 
-## Chỉnh sửa trong Unity
-
-- Scene đã có đầy đủ liên kết; không cần tự gắn script hay kéo asset.
-- `Assets/BlockBlast/Data/GameConfiguration.asset`: danh sách hình khối sử dụng.
-- `Assets/BlockBlast/Data/Shapes`: từng hình có danh sách ô riêng, thuận tiện học và mở rộng.
-- `Assets/BlockBlast/Data/Theme.asset`: sprite gốc và font.
-- `Assets/BlockBlast/Prefabs`: Cell, PieceTile, DraggablePiece.
-- Menu **Block Blast → Build Scene From Figma Assets** dựng lại scene/prefab/dữ liệu ban đầu. Lệnh này thay thế scene được tạo, nên lưu bản riêng trước khi tùy chỉnh.
-- Menu **Block Blast → Validate Core Rules** kiểm tra luật chơi.
-- Menu **Block Blast → Build Windows Player** xuất bản vào thư mục `BlockBlast-Windows` bên cạnh project.
-
-## Asset và kiểm tra
-
-Xem `ASSET_SOURCES.md` để đối chiếu nguồn Figma và cách cắt sprite. Các PNG gốc được giữ nguyên, không tô lại hay thay bằng hình tạm. Hiệu ứng âm thanh ngắn được tạo riêng cho project.
-
-Kết quả kiểm tra cùng ảnh chụp bản chạy được lưu trong `Validation`. Kiểm tra luật bao gồm biên bàn, chồng ô, xóa hàng/cột đồng thời, combo, hết nước đi và mô phỏng 2.000 lượt. Kiểm tra runtime chạy trên bản Windows, đi qua menu, kéo thả bằng EventSystem, đặt khối, tạm dừng, xóa hàng, game over, chơi lại và hướng dẫn.
